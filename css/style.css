@@ -409,13 +409,12 @@ strong {
 
 .present {
     height: 200px;
-    left: 0;
+    left: 90px;
     perspective: 600px;
     position: absolute;
     right: 0;
     width: 200px;
-    margin-top: 200px;
-    margin: 250px auto;
+    margin-top: 20px;
 }
 
 .name {
@@ -865,9 +864,10 @@ canvas {
 } */
 
 #popUpMusic {
-    overflow-x: hidden;
+    
 }
 
 #play {
     z-index: 9999;
 }
+
