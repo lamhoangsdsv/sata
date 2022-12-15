@@ -1,4 +1,7 @@
 $(document).ready(function(){
+    const audio = document.querySelector('audio');
+    const playIconContainer = document.getElementById('play-icon');
+    let playState = 'play'
     if (localStorage.getItem("color-scheme")) {
         let storage = localStorage.getItem("color-scheme") || null;
         $('html').attr('data-user-color-scheme', storage);
@@ -26,10 +29,56 @@ $(document).ready(function(){
           } else {
             $("#popUpMusic").toggleClass('hide');
           }
+        if(playState === 'play') {
+            wavesurfer.play();
+            $("#play-icon").attr('src',"./images/pause.png")
+            playState = 'pause';
+        } else {
+            wavesurfer.pause();
+            $("#play-icon").attr('src',"./images/play.png")
+            playState = 'play';
+        }
 
     });
     // Close Popup Music
     $("#closePopupMusic").click(function(){
         $("#popUpMusic").toggleClass('hide');
     });
+    // Remove element have class is hide-sp
+    console.log('window.innerWidth: ', window.innerWidth)
+    if (window.innerWidth < 768) {
+        $(".hide-sp").remove()
+    }
+    //Open question
+    $("#startQuestion").click(function() {
+        $(".question").slideToggle('slow');
+        if ($(this).html() =='Đóng') {
+            $(this).html('Mở câu hỏi');
+        } else {
+            $(this).html('Đóng');
+        }
+    });
+    $("#startQuestionPC").click(function() {
+        $(".question").slideToggle('slow');
+        if ($(this).html() =='Đóng') {
+            $(this).html('Mở câu hỏi');
+        } else {
+            $(this).html('Đóng');
+        }
+    });
+    playIconContainer.addEventListener('click', () => {
+        if(playState === 'play') {
+            wavesurfer.play();
+            playState = 'pause';
+            $("#play-icon").attr('src',"./images/pause.png")
+        } else {
+            wavesurfer.pause();
+            $("#play-icon").attr('src',"./images/play.png")
+            playState = 'play';
+        }
+    });
+    $("#btnHint").click(function() {
+        $(".mess-hint").toggle();
+    });
 });
+$(document).on('click', '#btnHintSp', function() {   $(".mess-hint").toggle(); });

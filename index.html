@@ -6,40 +6,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/reponsive.css">
+    <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <script src="https://unpkg.com/wavesurfer.js"></script>
 </head>
 
 <body>
+    <audio src="https://assets.codepen.io/4358584/Anitek_-_Komorebi.mp3" loop autoplay></audio>
     <canvas></canvas>
     <div class="home-template-dark" id="top">
         <div class="button-music">
+            <img src="./images/long-arrow-down-left.svg" alt="" class="note">
             <img src="./images/note-music.svg" alt="" width="50" height="50" class="shake-horizontal" id="btnMusic">
         </div>
         <div class="bulb-container">
             <button class="bulb">
                 <div class="bulb__image">
-                    <img src="./images/bulb-on.png" alt="Swining Light Bulb">
+                    <img src="./images/bulb-on.png" alt="Swining Light
+                            Bulb">
                 </div>
             </button>
             <button class="bulb">
                 <div class="bulb__image">
-                    <img src="./images/bulb-on.png" alt="Swining Light Bulb">
+                    <img src="./images/bulb-on.png" alt="Swining Light
+                            Bulb">
                 </div>
             </button>
             <button class="bulb">
                 <div class="bulb__image">
-                    <img src="./images/bulb-on.png" alt="Swining Light Bulb">
+                    <img src="./images/bulb-on.png" alt="Swining Light
+                            Bulb">
                 </div>
             </button>
         </div>
         <div class="container">
-            <div class="row">
-                <div class="col-4 col-md-2 col-xs-2" style="position: relative;">
-                    <img src="./images/pine-tree.svg" alt="" style="width: 80%">
+            <div class="row hide-sp">
+                <div class="col-2 col-md-2 col-xs-2 hide-sp" style="position: relative;">
+                    <img src="./images/pine-tree.svg" alt="" style="width:
+                            80%" class="pine-tree">
                 </div>
-                <div class="col-4 col-md-3 col-xs-2" style="position: relative;">
+                <div class="col-4 col-md-3 col-xs-2" style="position:
+                        relative;">
                     <div class="present">
                         <div class="name">
                             <div class="animation-heart">
@@ -63,31 +74,225 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-8 col-md-5 col-xs-10" style="text-align: right;">
-                    <img src="./images/santa-2.svg" alt="" style="width: 45%">
+                <div class="col-4 col-md-5 col-xs-10" style="text-align:
+                        right;">
+                    <img src="./images/santa-2.svg" alt="" style="width:
+                            45%" class="santa">
                 </div>
-                <div class="col-8 col-md-2 col-xs-2" style="text-align: right;">
-                    <img src="./images/pine-tree.svg" alt="" style="width: 80%">
+                <div class="col-2 col-md-2 col-xs-2 hide-sp" style="text-align: right;">
+                    <img src="./images/pine-tree.svg" alt="" style="width:
+                            80%" class="pine-tree">
+                </div>
+            </div>
+            <div style="background: linear-gradient(#739ebd, #74a6c9, #fff); height: 500px;" class="hide-sp pc">
+                <div class="slider pc">
+                    <div class="container-slider-first">
+                        <div class="container-slider">
+                            <div class="first">
+                                <img class="box-image"
+                                    src="https://scontent.fhan14-3.fna.fbcdn.net/v/t39.30808-6/300700818_1415056028982127_5147155405857752342_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=VuChltL1IkcAX8MKV7B&tn=-oOnhQxm33NsV71B&_nc_ht=scontent.fhan14-3.fna&oh=00_AfAxlcpk3_kRdBrYhmb2LNia643nGPqEZlIaMl4fu4-wUw&oe=639F6F84"
+                                    alt="">
+                                <div class="overlay">
+                                    <h3>Chào Cô Bé</h3>
+                                </div>
+                            </div>
+                            <div class="second">
+                                <img class="box-image"
+                                    src="https://scontent.fhan14-2.fna.fbcdn.net/v/t39.30808-6/288842770_1369066923581038_4953273505097857505_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=rX2x9NjkJCgAX9RjV54&_nc_ht=scontent.fhan14-2.fna&oh=00_AfB6i1ssHGQdrxUr9SuYGce-eiBTA1_uaZHa8D-DGcSZ8g&oe=63A04AAD"
+                                    alt="">
+                                <div class="overlay">
+                                    <h5>? Đang cười với Anh Phải không </h5>
+                                    <h5> (((= Anh đùa đấy </h5>
+                                </div>
+                            </div>
+                            <div class="third">
+                                <img class="box-image"
+                                    src="https://scontent.fhan14-3.fna.fbcdn.net/v/t39.30808-6/276069487_1307899096364488_1338225168806501571_n.jpg?stp=dst-jpg_p480x480&_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=-EVr3IgV0yQAX89e3V7&_nc_ht=scontent.fhan14-3.fna&oh=00_AfCW2CJLRMOiglTLMNgTcM442SRJCqcos_wBKhBUYvXxdg&oe=63A0927D"
+                                    alt="">
+
+                            </div>
+                            <div class="fourth">
+                                <img class="box-image"
+                                    src="https://scontent.fhan14-1.fna.fbcdn.net/v/t39.30808-6/276111243_1307899166364481_5956549164760852584_n.jpg?stp=dst-jpg_p480x480&_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=yZvyfyU913AAX8yfgKJ&_nc_ht=scontent.fhan14-1.fna&oh=00_AfDp8UYFnlQcwDik-CVxxLjEXjbRbfDIqcBnrc0jP7l12Q&oe=63A12817"
+                                    alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="message-pc disable">
+                    <div class="mess-no">
+                        <h5 style="margin: 0 auto;text-align: center;">Cảm ơn em đã xem hết !. <span style="font-size: 14px; color: bisque;">Em xem bằng điện thoại nội dung có khác nhé bé =)))</span> </h5>
+                        <h4 style="margin: 0 auto;text-align: center;display: flex;
+                        justify-content: center;">
+                           Mỗi buổi sáng là một khởi đầu mới, hy vọng mới. Mỗi ngày đang tới là một ngày tuyệt vời cho mỗi chúng ta =))) <button class="btn btn-hint" id="btnHint" style="margin-left: 10px;z-index: 99;"><i class="fa fa-question" aria-hidden="true"></i></button><br/> 
+                        </h4>
+                    </div>
+ 
+                    <div class="mess-hint disable">
+                        <h5 style="margin: 0 auto;text-align: center;">Mặc dù chưa gặp em lần nào. Ko biết là mình chưa quen nhau lắm hay sao ?. Nhưng anh có cảm giác e rất khác với những người khác =)) <br/>
+                            Khác ở chỗ nào á ? Khác chỗ a lúc nào cũng cảm giác cứ bị cuốn theo e ý. Mong tới ngày gặp em  =)))
+                            </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="image-sp">
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="https://scontent.fhan14-3.fna.fbcdn.net/v/t39.30808-6/300700818_1415056028982127_5147155405857752342_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=VuChltL1IkcAX8MKV7B&tn=-oOnhQxm33NsV71B&_nc_ht=scontent.fhan14-3.fna&oh=00_AfAxlcpk3_kRdBrYhmb2LNia643nGPqEZlIaMl4fu4-wUw&oe=639F6F84"
+                            alt="">
+                        <div class="text text-danger">🤍🤍🤍</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="https://scontent.fhan14-2.fna.fbcdn.net/v/t1.6435-9/201808738_1142335272920872_6829602590566861910_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=YrlI2kKuVQAAX_4GfgZ&_nc_ht=scontent.fhan14-2.fna&oh=00_AfCEwRlbPTGeCBbYcK5Q5ALDIoNkRv343xlVmKnmAecdxQ&oe=63C2B549"
+                            alt="">
+                        <div class="text">Em ko phải người Ấn Độ đâu <br />
+                        <span class="text-danger">Em là người của Anh =)))</span>
+                        </div>
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="https://scontent.fhan14-3.fna.fbcdn.net/v/t39.30808-6/276069487_1307899096364488_1338225168806501571_n.jpg?stp=dst-jpg_p480x480&_nc_cat=103&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=-EVr3IgV0yQAX89e3V7&_nc_ht=scontent.fhan14-3.fna&oh=00_AfCW2CJLRMOiglTLMNgTcM442SRJCqcos_wBKhBUYvXxdg&oe=63A0927D"
+                            alt="">
+                        <div class="text">
+                            Lần đầu nhìn thấy anh<br />
+                            Tưởng không sao…mà lao đao không tưởng!
+                            <br/>
+                           <span class="text-danger">Ừ anh biết rồi =))))</span> 
+                        </div>
+                       
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="https://scontent.fhan14-2.fna.fbcdn.net/v/t39.30808-6/288842770_1369066923581038_4953273505097857505_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=rX2x9NjkJCgAX9RjV54&_nc_ht=scontent.fhan14-2.fna&oh=00_AfB6i1ssHGQdrxUr9SuYGce-eiBTA1_uaZHa8D-DGcSZ8g&oe=63A04AAD"
+                            alt="">
+                        <div class="text">Đừng cười như thế =((<br />
+                            <span class="text-danger">Trái tim Anh lại xôn xaooo =))))</span> 
+                        </div>
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="https://scontent.fhan14-1.fna.fbcdn.net/v/t39.30808-6/287296161_1369062330248164_4473151635686723155_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=vZwnFdP_yPwAX8PW6ZS&tn=-oOnhQxm33NsV71B&_nc_ht=scontent.fhan14-1.fna&oh=00_AfBcMgGZd_q7d4GtxEtxEYp5Gtvu5E-eP9kllO_q6mKJRA&oe=639F8E98
+                        "
+                            alt="">
+                        <div class="text">Anh nghĩ em nên đi thi Hoa Hậu ? <br />
+                            <span class="text-danger">Nếu ko được quán quân trong lòng mọi người. Nhưng chắc chắn là quán quân trong lòng Anh =))))</span></div>
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="https://scontent.fhan14-1.fna.fbcdn.net/v/t39.30808-6/276111243_1307899166364481_5956549164760852584_n.jpg?stp=dst-jpg_p480x480&_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=yZvyfyU913AAX8yfgKJ&_nc_ht=scontent.fhan14-1.fna&oh=00_AfDp8UYFnlQcwDik-CVxxLjEXjbRbfDIqcBnrc0jP7l12Q&oe=63A12817"
+                            alt="">
+                        <div class="text">🤍🤍🤍</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="https://scontent.fhan14-3.fna.fbcdn.net/v/t1.6435-9/183353863_1109265129561220_1761881360980054369_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=174925&_nc_ohc=keQeeTTuRa0AX8YKBtA&_nc_ht=scontent.fhan14-3.fna&oh=00_AfD7gz5UqmXCPL3frhBv-kCRhsR9J1fzbqKJXKRBng6dmQ&oe=63C2D3B3"
+                            alt="">
+                        <div class="text">🤍🤍🤍</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="https://scontent.fhan14-3.fna.fbcdn.net/v/t39.30808-6/263599904_1240885949732470_6758662908218277400_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=Y2k9P9Nk3q0AX9_KHqX&_nc_ht=scontent.fhan14-3.fna&oh=00_AfC8HW4VEhNfXboGluaCJo-NyXHGdC3QnNO19GoovhJd7g&oe=63A0358B"
+                            alt="">
+                        <div class="text">Đúng rồi che nắng đi. <br />
+                        <span class="text-danger">Anh sợ nhăn sắc của e bị nắng chiếu đi mất =)))</span></div>
+                    </div>
+    
+
+                </div>
+
+            </div>
+            <div class="sp" style="padding-top: 150px;
+                    overflow: hidden;
+                    margin-bottom: 100px;
+                    position: relative;
+                ">
+                <div class="row" style="padding-top: 30px">
+                    <div class="col-2 col-md-2 col-xs-2 hide-sp" style="position: relative;">
+                        <img src="./images/pine-tree.svg" alt="" style="width:
+                                        80%" class="pine-tree">
+                    </div>
+                    <div class="col-4 col-md-3 col-xs-2" style="position:
+                                    relative;margin-left: 45px;">
+                        <div class="present sp">
+                            <div class="name">
+                                <div class="animation-heart">
+                                    <div class="heart"></div>
+                                </div>
+                            </div>
+                            <div class="rotate-container">
+                                <div class="bottom"></div>
+                                <div class="front"></div>
+                                <div class="left"></div>
+                                <div class="back"></div>
+                                <div class="right"></div>
+                                <div class="lid">
+                                    <div class="gift"></div>
+                                    <div class="lid-top"></div>
+                                    <div class="lid-front"></div>
+                                    <div class="lid-left"></div>
+                                    <div class="lid-back"></div>
+                                    <div class="lid-right"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-md-5 col-xs-10" style="text-align:
+                                    right;">
+                        <img src="./images/santa-2.svg" alt="" style="width:
+                                        45%" class="santa">
+                    </div>
+                    <div class="col-2 col-md-2 col-xs-2 hide-sp" style="text-align: right;">
+                        <img src="./images/pine-tree.svg" alt="" style="width:
+                                        80%" class="pine-tree">
+                    </div>
+                </div>
+                <div class="row disable" style="padding-top: 53px;z-index: 100;" id="message">
+                    <div class="box-title"> 
+                        <h5 style="margin: 0 auto;text-align: center;">Cảm ơn em đã xem hết !</h5>
+                        <h4 style="margin: 0 auto;text-align: center;">
+                            Mỗi buổi sáng là một khởi đầu mới, hy vọng mới. Mỗi ngày đang tới là một ngày tuyệt vời cho mỗi chúng ta =)))<br/> 
+                        </h4>
+                        <button class="btn btn-hint" id="btnHintSp" style="margin-left: 10px;margin: 0 auto;"><i class="fa fa-question" aria-hidden="true"></i></button>
+                        <div class="mess-hint disable"> <h5 style="margin: 0 auto;text-align: center;">Mặc dù chưa gặp em lần nào. Ko biết là mình chưa quen nhau lắm hay sao ?. Nhưng anh có cảm giác e rất khác với những người khác =)) <br/>
+                            Khác ở chỗ nào á ? Khác chỗ a lúc nào cũng cảm giác cứ bị cuốn theo e ý. Mong tới ngày gặp em  =)))</h5>
+                        </div></div>
+                       
+                    </div>
                 </div>
             </div>
         </div>
-        <div id="popUpMusic" class="music-box hide">
-            <div class="img-music">
-                <img src="./images/disk-music.svg" alt="" width="50" height="50" id="closePopupMusic">
-            </div>
-            <div class="music-control">
-                <div class="track">
-                    <img src="./images/play.png" alt="" width="50" height="50" id="play">
-                </div>
+    </div>
+    </div>
+    </div>
+    <div id="popUpMusic" class="music-box hide">
+        <div class="img-music hide-sp">
+            <img src="./images/disk-music.svg" alt="" width="50" height="50" id="closePopupMusic">
+        </div>
+        <div class="music-control">
+            <!-- <audio src="https://assets.codepen.io/4358584/Anitek_-_Komorebi.mp3" preload="metadata" loop muted></audio> -->
+            <div class="track">
+                <img src="./images/play.png" alt="" width="50" height="50" id="play-icon">
             </div>
         </div>
+        <div id="waveform"></div>
+    </div>
     </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mediaelement/4.2.7/mediaelement-and-player.min.js"></script>
     <!-- js custom -->
     <script src="./js/main.js"></script>
+    <script src="./js/common.js"></script>
     <script src="./js/canvas-snow.js"></script>
+    <script>
+        var wavesurfer = WaveSurfer.create({
+            container: '#waveform',
+            waveColor: '#ddd',
+            progressColor: '#ff006c',
+            barWidth: 4,
+            responsive: true,
+            height: 90,
+            barRadius: 4
+        });
+        wavesurfer.load('./media/HinhNhuTaThichNhau.mp3');
+        wavesurfer.on('ready', function () {
+            wavesurfer.play();
+        });
+    </script>
 </body>
 
 </html>
