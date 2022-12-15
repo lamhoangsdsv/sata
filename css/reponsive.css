@@ -1,0 +1,87 @@
+@media (max-width: 768px) {
+    .name .heart {
+        width: 30px;
+        height: 30px;
+    }
+    .heart:before, .heart:after {
+        width: 30px;
+        height: 30px;
+    }
+    .heart:before {
+        top: -18px;
+        left: 0;
+    }
+    .heart:after {
+        left: 18px;
+        top: 0;
+    }
+    /* .bottom, .front, .left, .back, .right {
+        width: 72%;
+    } */
+    .front {
+        transform: translateZ(49px);
+    }
+    .back {
+        transform: translateZ(-50px) rotateY(180deg) rotateX(0);
+    }
+
+    .lid-left, .lid-back, .lid-right, .lid-front {
+        height: 30px;
+    }
+
+    .lid-top, .lid-left, .lid-back, .lid-right, .lid-front {
+        width: 110px;
+    }
+    .lid-top {
+        height: 110px;
+    }
+    .lid-front {
+        transform: translateZ(54px);
+    }
+    .lid-back {
+        transform: translateZ(-54px) rotateY(180deg);
+    }
+    .present {
+        width: 100px;
+        height: 100px;
+        left: 10px;
+        margin: 90px 0 190px 35px;
+    }
+    .gift:after {
+        bottom: -43px;
+        left: 20px;
+    }
+    .gift::before {
+        bottom: 0;
+        left: 0;
+        top: -47px;
+        left: -28px;
+    }
+    .present.open .front {
+        transform: translateZ(44px) rotateX(-90deg);
+    }
+    .present.open .back {
+        transform: translateZ(-44px) rotateY(180deg) rotateX(-90deg);
+    }
+    .rotate-container {
+        transform: rotateY(170deg);
+    }
+    
+    .music-box {
+        height: 80px;
+    }
+
+    .hide {
+        height: 0px;
+    }
+    
+    .show {
+        height: 80px;
+    }
+    .music-box .img-music, .music-control {
+        line-height: 80px;
+    }
+    .button-music {
+        padding: 30px 10px;
+    }
+}

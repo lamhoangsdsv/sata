@@ -1,5 +1,8 @@
 const present = document.querySelector('.present')
-present.onclick = () => present.classList.toggle('open')
+present.onclick = () => {
+	console.log('11111')
+	// present.classList.toggle('open')
+}
 
 
 
