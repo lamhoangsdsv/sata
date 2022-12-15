@@ -1,7 +1,16 @@
 const present = document.querySelector('.present')
+const presentSP = document.querySelector('.present.sp')
 present.onclick = () => {
-	console.log('11111')
-	// present.classList.toggle('open')
+	present.classList.toggle('open')
+	setTimeout(() =>{
+		$(".message-pc").toggle('open')
+	}, 999)
+}
+presentSP.onclick = () => {
+	presentSP.classList.toggle('open')
+	setTimeout(() =>{
+		$("#message").toggle('open')
+	}, 999)
 }
 
 

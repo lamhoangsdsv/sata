@@ -12,12 +12,13 @@ section {
     display: block
 }
 
-html {
+/* html {
     height: 100%;
-}
+} */
 
 body {
-    height: 100%;
+    min-height: 100vh;
+    /* height: 100vh; */
     line-height: 1;
     overflow: auto;
 }
@@ -93,7 +94,6 @@ body {
     color: var(--text-color);
     font-family: Bitter, serif;
     line-height: 1.5;
-    height: 100%;
 }
 
 .transition-body body {
@@ -857,6 +857,7 @@ canvas {
 /* .track {
     display: flex;
     align-items: center;
+    margin-top: 10px;
 }
 
 .track div {
@@ -864,10 +865,241 @@ canvas {
 } */
 
 #popUpMusic {
-    
+    z-index: 100;
 }
 
 #play {
     z-index: 9999;
 }
+
+.santa {
+    animation: santa 10s ease 0s infinite normal forwards;
+}
+
+.pine-tree {
+    animation: present-rotate 30s infinite linear;
+}
+
+.btn-question {
+    margin: 0 auto;
+    z-index: 30;
+    position: relative;
+    background: rgb(34,193,195);
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);  
+}
+
+.question-content {
+    min-height: 300px;
+    background: #cce5ff;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.question {
+    display: none;
+}
+
+
+.content.pc .title-question {
+    text-align: center;
+    width: 330px;
+    font-size: 24px;
+    margin: 70px auto 20px auto;
+}
+
+/* CSS slider */
+.container-slider > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #f1f2f9;
+    direction: rtl;
+}
+
+.slider {
+    width: 1000px;
+    margin: 80px auto;
+    position: relative;
+    height: 100%;
+
+}
+
+.container-slider-first {
+    position: absolute;
+    left: 80px;
+    margin-top: 40px;
+}
+
+.container-slider {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,200px));
+    grid-template-rows: 200px 200px;
+    gap: 15px;
+    grid-auto-flow: dense;
+}
+.overlay {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    min-height: 100px;
+    max-height: auto;
+    bottom: 0;
+    border-radius: 0 0 10px 10px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.87));
+}
+.overlay h3 {
+    padding: 20px;
+    padding-bottom: 0;
+    color: #fff;
+}
+.overlay h5 {
+    padding: 20px;
+    padding-bottom: 0;
+    color: #fff;
+}
+.box-image {
+    object-fit: cover;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.first {
+    position: relative;
+    grid: 5/3;
+    grid-row: 1/-1;
+    grid-column: 1/3;
+}
+.second {
+    position: relative;
+    grid-column: -1/3;
+}
+.third {
+    position: relative;
+    grid-row: 2/2;
+}
+.fourth {
+    grid-row: 2/2;
+}
+
+.second .overlay {
+    min-height: 50px;
+    padding-left: 20px;
+}
+
+/* CSS SLIDER SP */
+.banner1, .banner2, .banner3, .banner4, .banner5, .banner6, .banner7, .banner8 {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+img {
+    width: 110%;
+    animation: zoom-out 12s linear infinite;
+}
+.text-box {
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    left: 5%;
+    color: white;
+    animation: textUp 12s linear infinite;
+}
+.text-box h1 {
+    font-size: 6rem;
+}
+.text-box span {
+    width: 100px;
+    height: 1px;
+    background-color: orange;
+    position: absolute;
+    left: 0;
+}
+.container-slider-content{
+    width: 100%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    border: 10px solid #975d5d;
+    border-radius: 8px;
+    box-shadow: -1px 5px 15px black;
+}
+
+img{
+    width: 100%;
+}
+
+.wrapper img {
+    width:100%;
+    height:100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+.container {
+    min-height: 100vh;
+}
+
+.mySlides {display: none;}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 18px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    background:rgb(0,0,0,.5);
+    padding: 30px 0;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3.5s;
+    animation-name: fade;
+    animation-duration: 3.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
+
+  .text-danger {
+    color: #FF0000;
+    font-weight: 700;
+  }
+
 

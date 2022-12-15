@@ -45,7 +45,7 @@
         width: 100px;
         height: 100px;
         left: 10px;
-        margin: 90px 0 190px 35px;
+        margin: 30px 0 190px 35px;
     }
     .gift:after {
         bottom: -43px;
@@ -84,4 +84,148 @@
     .button-music {
         padding: 30px 10px;
     }
+    .santa {
+        width: 100% !important;
+        margin-left: 100px;
+    }
+    .content {
+        margin-top: 15px;
+    }
+    .pc {
+        display: none;
+    }
+    .slider {
+        width: 100%;
+        margin: 90px auto;
+    }
+    .slider.pc {
+        display: none;
+    }
+    .box-img-sp{
+        position: relative;
+        margin-top: 80px;
+        min-height: 493px;
+    }
+    .box-img-sp-1 {
+        position: relative;
+        margin-top: 10px;
+        min-height: 493px;
+    }
+    .container {
+        min-height: 100vh;
+        background: linear-gradient(#739ebd, #74a6c9, #fff);
+        margin: 0;
+        padding: 0;
+    }
+    #waveform {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        left: 17%;
+    }
+    .image-sp {
+        min-height: 500px;
+    }
+    .note {
+        width: 50px;
+        position: absolute;
+        top: 8px;
+        left: 57px;
+    }
+    .box-title {
+       
+        padding: 0 15px;
+    }
+
+    .disable {
+        display: none;
+    }
+
+    .box-title h4 {
+        color: rgb(136, 27, 27);
+    }
+
+    .box-title h5 {
+        color: rgb(194, 135, 27);
+    }
+    .disable {
+        display: none;
+    }
+    .mess-hint {
+        margin-top: 10px;
+        border-radius: 20px;
+        padding: 10px 10px;
+    }
+    .btn-hint {
+        width: 39px;
+        height: 39px;
+        text-align: center;
+        background: #fffff7;
+        display: flex;
+        font-size: 28px;
+        justify-content: center;
+    }
+
+}
+
+@media (min-width: 769px) {
+    .sp {
+        display: none;
+    }
+    .box-img-sp {
+        display: none;
+    }
+    .box-img-sp-1 {
+        display: none;
+    }
+    #waveform {
+        position: absolute;
+        top: 0;
+        width: 68%;
+        left: 17%;
+    }
+    .image-sp {
+       display: none;
+    }
+    .note {
+        width: 50px;
+        position: absolute;
+        top: 8px;
+        left: 100px;
+    }
+    .message-pc  h4 {
+        font-weight: 600;
+        font-size: 26px;
+        color: rgb(240, 240, 240);
+    }
+    .message-pc h5 {
+        font-size: 24px;
+        font-weight: 600;
+        color: rgb(255, 254, 254);
+    }
+    .disable {
+        display: none;
+    }
+    .mess-no {
+        margin-top: 20px;
+        background-color: #74a6c9;
+        border-radius: 20px;
+        padding: 20px 10px;
+    }
+    .mess-hint {
+        margin-top: 20px;
+        background-color: #74a6c9;
+        border-radius: 20px;
+        padding: 20px 10px;
+    }
+    .btn-hint {
+        width: 39px;
+        height: 39px;
+        text-align: center;
+        background: #fffff7;
+        display: flex;
+        font-size: 28px;
+        justify-content: center;
+    }
+
 }
