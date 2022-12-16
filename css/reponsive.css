@@ -80,6 +80,7 @@
     }
     .music-box .img-music, .music-control {
         line-height: 80px;
+        width: 50px;
     }
     .button-music {
         padding: 30px 10px;
