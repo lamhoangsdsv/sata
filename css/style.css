@@ -384,7 +384,6 @@ strong {
 }
 
 .home-template-dark {
-    height: 100%;
     background-color: rgb(124 116 116);
     background-image:
         linear-gradient(335deg, rgb(68, 17, 17) 23px, transparent 23px),
@@ -393,10 +392,11 @@ strong {
         linear-gradient(155deg, rgb(68, 17, 17) 23px, transparent 23px);
     background-size: 58px 58px;
     background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
+    min-height: 100%;
+    height: 124vh;
 }
 
 .home-template-light {
-    height: 100%;
     background-color: silver;
     background-image:
         linear-gradient(335deg, #842929ed 23px, transparent 23px),
@@ -405,6 +405,8 @@ strong {
         linear-gradient(155deg, #842929ed 23px, transparent 23px);
     background-size: 58px 58px;
     background-position: 0px 2px, 4px 35px, 29px 31px, 34px 6px;
+    min-height: 100%;
+    height: 124vh;
 }
 
 .present {
