@@ -167,6 +167,9 @@
         font-size: 28px;
         justify-content: center;
     }
+    .track img {
+        margin-left: 8px;
+    }
 
 }
 
