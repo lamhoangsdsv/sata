@@ -1047,7 +1047,9 @@ img{
 }
 
 .mySlides {display: none;}
-
+.mySlides  img {
+    border-radius: 20px;
+}
 /* Slideshow container */
 .slideshow-container {
     max-width: 1000px;
